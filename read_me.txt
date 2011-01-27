@@ -27,15 +27,6 @@
 ##
 
 #
-#---------[ 0. UPDATE ]-------------------------------------
-#
-
-To update from the 1.2 version, use the old AP_plugile.phpto uninstall Plugile mod (deletes some things from the database) BEFORE you upload the new AP_plugile.php and use it (the new one) to install again Plugile 2.0.
-Then you have to upload lang/***/plugile.php (where *** is the language) and plugins/AP_Plugile.php (replace the files old whith the new ones)
-plugiles/UP_Exemple.php and plugiles/UPP_Exemple.php are examples.
-
-
-#
 #---------[ 1. UPLOAD FILES ]-------------------------------------
 #
 
