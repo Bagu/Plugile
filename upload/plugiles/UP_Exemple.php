@@ -22,45 +22,45 @@
 
 ##
 ##
-##  Voici quelques notes intéressantes pour les aspirants auteurs de plugiles :
+##  Voici quelques notes intÃ©ressantes pour les aspirants auteurs de plugiles :
 ##
-##  1. Si vous voulez afficher un message par l’intermédiaire de la fonction 
-##     message(), vous devez le faire avant d’appeler generate_admin_menu($plugile).
+##  1. Si vous voulez afficher un message par lâ€™intermÃ©diaire de la fonction 
+##     message(), vous devez le faire avant dâ€™appeler generate_admin_menu($plugile).
 ##
-##  2. Les plugiles sont chargés par profil.php?plugile=UP_nomplugile.php et ne doivent pas être terminés 
-##     (par exemple en appelant exit()). Après que le script du plugile ait fini, le 
+##  2. Les plugiles sont chargÃ©s par profil.php?plugile=UP_nomplugile.php et ne doivent pas Ãªtre terminÃ©s 
+##     (par exemple en appelant exit()). AprÃ¨s que le script du plugile ait fini, le 
 ##     script du chargeur affiche le pied de page, ainsi inutile de vous souciez de cela. 
 ##     Cependant veuillez noter que terminer un plugile en appelant message() ou 
-##     redirect() est très bien.
+##     redirect() est trÃ¨s bien.
 ##
-##  3. L’attribut action de toute balise <forme> et l’URL cible pour la fonction 
-##     redirect() doit être placé à la valeur de $_SERVER[’REQUEST_URI’]. Cette 
-##     URL peut cependant être étendue pour inclure des variables supplémentaires 
-##     (comme l’ajout de &foo=bar dans le plugile exemple).
+##  3. Lâ€™attribut action de toute balise <forme> et lâ€™URL cible pour la fonction 
+##     redirect() doit Ãªtre placÃ© Ã  la valeur de $_SERVER[â€™REQUEST_URIâ€™]. Cette 
+##     URL peut cependant Ãªtre Ã©tendue pour inclure des variables supplÃ©mentaires 
+##     (comme lâ€™ajout de &foo=bar dans le plugile exemple).
 ##
-##  4. Pour qu'il soit visible par le membre et les administrateurs et modérateurs, votre fichier doit avoir le préfixe : 
+##  4. Pour qu'il soit visible par le membre et les administrateurs et modÃ©rateurs, votre fichier doit avoir le prÃ©fixe : 
 ##      UPP_ (User Private Plugile).
-##      Pour que tous les membres y aient accès, votre fichier doit avoir le préfixe : UP_ (User Plugin)
+##      Pour que tous les membres y aient accÃ¨s, votre fichier doit avoir le prÃ©fixe : UP_ (User Plugin)
 ##
-##  5. Dans le cas d'un UP_, il peut être important de bien différencier la partie visible seulement par le membre (et les 
-##      administrateurs et modérateurs) de la partie visible par tous. (ceci grâce à des conditions vérifiant l'id ou l'id de 
+##  5. Dans le cas d'un UP_, il peut Ãªtre important de bien diffÃ©rencier la partie visible seulement par le membre (et les 
+##      administrateurs et modÃ©rateurs) de la partie visible par tous. (ceci grÃ¢ce Ã  des conditions vÃ©rifiant l'id ou l'id de 
 ##      groupe du membre visitant le profil)
 ##
 ##  6. Utilisez _ au lieu des espaces dans le nom de fichier.
 ##
 ##  7. Tant que les scripts de plugile sont inclus depuis le scripts profil.php 
-##     de PunBB, vous avez accès toutes les fonctions et variables globales de PunBB 
+##     de PunBB, vous avez accÃ¨s toutes les fonctions et variables globales de PunBB 
 ##     (par exemple $db, $pun_config, $pun_user etc.).
 ##
-##  8. Faites de votre mieux pour garder l’aspect et l’ergonomie de votre interface 
+##  8. Faites de votre mieux pour garder lâ€™aspect et lâ€™ergonomie de votre interface 
 ##     utilisateur de plugiles semblable au reste des scripts de profils. 
-##     N’hésitez pas à emprunter le marquage et le code aux scripts de profil pour 
-##     l’employer dans vos plugiles.
+##     Nâ€™hÃ©sitez pas Ã  emprunter le marquage et le code aux scripts de profil pour 
+##     lâ€™employer dans vos plugiles.
 ##
-##  9. Les plugiles doivent êtres délivrés sous la licence d’utilisation GNU/GPL ou 
-##     une licence compatible. Recopiez le préambule GPL (situé en haut des scripts 
-##     de PunBB) dans votre script de plugile et changez l e copyright pour qu’il 
-##     corresponde à l’auteur du plugile (c’est à dire vous).
+##  9. Les plugiles doivent Ãªtres dÃ©livrÃ©s sous la licence dâ€™utilisation GNU/GPL ou 
+##     une licence compatible. Recopiez le prÃ©ambule GPL (situÃ© en haut des scripts 
+##     de PunBB) dans votre script de plugile et changez l e copyright pour quâ€™il 
+##     corresponde Ã  lâ€™auteur du plugile (câ€™est Ã  dire vous).
 ##
 ##
 
@@ -99,11 +99,11 @@ $french_array = array(
 'Nothing entered'			=>	'Vous n\'avez rien saisi !',
 'Result'					=>	'Vous avez dit "%s". Bon boulot.',
 'Plugile name'				=>	'Plugile exemple',
-'Plugile description 1'		=>	'Ce plugile ne fait rien de bien utile. D\'où le nom &quot;Exemple&quot;.',
-'Plugile description 2'		=>	'Ce serait un bon endroit pour parler au sujet de votre plugile. Décrivez ce qu\'il fait et comment il devrait être utilisé. Soyez bref, mais instructif.',
+'Plugile description 1'		=>	'Ce plugile ne fait rien de bien utile. D\'oÃ¹ le nom &quot;Exemple&quot;.',
+'Plugile description 2'		=>	'Ce serait un bon endroit pour parler au sujet de votre plugile. DÃ©crivez ce qu\'il fait et comment il devrait Ãªtre utilisÃ©. Soyez bref, mais instructif.',
 'Form title'				=>	'Un formulaire d\'exemple',
 'Plugile legend'			=>	'Saisissez un bout de texte et cliquez "Afficher"&nbsp;!',
-'Text to show'				=>	'Texte à afficher',
+'Text to show'				=>	'Texte Ã  afficher',
 'Text to show desc'			=>	'Le texte que vous voulez afficher.',
 'Plugile submit' 			=>	'Afficher&nbsp;!',
 );
