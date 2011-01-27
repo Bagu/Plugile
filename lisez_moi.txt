@@ -11,31 +11,23 @@
 ##
 ##             Auteur :  BN [http://la-bnbox.info] et Pandark [http://pandark.free.fr]
 ##
-##        Description :  Cette mod permet d'ajouter un système de plugin
-##                       à la page profile. Cela fonctionne comme les
-##                       plugins réservés aux administrateurs et modérateurs.
+##        Description :  Cette mod permet d'ajouter un systÃ¨me de plugin
+##                       Ã  la page profile. Cela fonctionne comme les
+##                       plugins rÃ©servÃ©s aux administrateurs et modÃ©rateurs.
 ##
-##  Fichiers affectés :  include/functions.php
+##  Fichiers affectÃ©s :  include/functions.php
 ##                       profile.php
 ##
 ##     Affecte la BDD :  Oui
 ##
 ##
 ##         DISCLAIMER :  Veuillez noter que ces mods ne sont pas
-##                       officiellement supportés par PunBB. L'installation
-##                       de ces modifications est à vos risques et périls.
-##                       N'oubliez pas de sauvegarder la base de données et
-##                       les fichiers affectés avant de procéder à
+##                       officiellement supportÃ©s par PunBB. L'installation
+##                       de ces modifications est Ã  vos risques et pÃ©rils.
+##                       N'oubliez pas de sauvegarder la base de donnÃ©es et
+##                       les fichiers affectÃ©s avant de procÃ©der Ã 
 ##                       l'installation de cette modification.
 ##
-
-#
-#---------[ 0. A NOTER ]-------------------------------------
-#
-
-Pour mettre à jour depuis la version 1.2 : utiliser _le plugin AP_plugile.php que vous avez déjà_ pour "désinstaller" la mod (supprimer des trucs de la base de donnée) AVANT de placer le nouveau AP_plugile.php que vous utiliserez pour réinstaller Plugile.
-Puis vous devrez uploader les nouveaux lang/***/plugile.php (où *** est la langue) et plugins/AP_Plugile.php à la place des anciens
-plugiles/UP_Exemple.php et plugiles/UPP_Exemple.php sont des exemples.
 
 #
 #---------[ 1. TELECHARGER LES FICHIERS ]-------------------------------------
@@ -299,4 +291,4 @@ profile.php
 
 Pour terminer l'installation de cette mod, vous devez vous rendre sur le plugin
 d'administration. C'est aussi la que vous pourrez modifier l'affichage des plugiles.
-Pour créer un nouveau plugile : tout est expliqué dans le plugile exemple UP_Exemple.php
+Pour crÃ©er un nouveau plugile : tout est expliquÃ© dans le plugile exemple UP_Exemple.php
