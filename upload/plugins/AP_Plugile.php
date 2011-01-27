@@ -45,7 +45,7 @@ if (isset($pun_config['o_plugile_version'])) { $reinstall=1; }
 	$plugile_menu = '1';
 	$plugile_menu_name = 'Plugile';
 
-	$result = $db->query('REPLACE INTO '.$db->prefix.'config (conf_name, conf_value) VALUES ("o_plugile_version","'.$plugile_version.'"), ("o_plugile_menu","'.$plugile_menu.'"), ("o_plugile_menu_name","'.$plugile_menu_name.'")') or error('Impossible d\'ajouter ou de remplacer "o_plugile_version", "o_plugile_menu" et "o_plugile_menu_name" de la table config', __FILE__, __LINE__, $db->error());
+	$result = $db->query('REPLACE INTO '.$db->prefix.'config (conf_name, conf_value) VALUES ("o_plugile_version","'.$plugile_version.'"), ("o_plugile_menu","'.$plugile_menu.'"), ("o_plugile_menu_name","'.$plugile_menu_name.'")') or error('Unable to add or update "o_plugile_version", "o_plugile_menu" and "o_plugile_menu_name" in config', __FILE__, __LINE__, $db->error());
 	
 	// Regenerate the config cache
 	require_once PUN_ROOT.'include/cache.php';
@@ -60,7 +60,7 @@ if (isset($pun_config['o_plugile_version'])) { $reinstall=1; }
 // Uninstall
 if (isset($_POST['delete']))
 {
-	$db->query('DELETE FROM '.$db->prefix.'config WHERE conf_name="o_plugile_version" OR conf_name="o_plugile_menu" OR conf_name="o_plugile_menu_name"') or error('Impossible de supprimer "o_plugile_version", "o_plugile_menu" et "o_plugile_menu_name" de la table config', __FILE__, __LINE__, $db->error());
+	$db->query('DELETE FROM '.$db->prefix.'config WHERE conf_name="o_plugile_version" OR conf_name="o_plugile_menu" OR conf_name="o_plugile_menu_name"') or error('Unable to delete "o_plugile_version", "o_plugile_menu" and "o_plugile_menu_name" from config', __FILE__, __LINE__, $db->error());
 	
 	// Regenerate the config cache
 	require_once PUN_ROOT.'include/cache.php';
@@ -72,7 +72,7 @@ if (isset($_POST['delete']))
 // Update Plugile Configuration
 if (isset($_POST['saveconfig']) AND isset($pun_config['o_plugile_version']))
 {
-	$db->query('REPLACE INTO '.$db->prefix.'config (conf_name, conf_value) VALUES ("o_plugile_menu","'.intval($_POST['menu']).'"), ("o_plugile_menu_name","'.pun_htmlspecialchars($_POST['plugile_menu_name']).'")') or error('Impossible d\'ajouter ou de remplacer "o_plugile_menu" et "o_plugile_menu_name" de la table config', __FILE__, __LINE__, $db->error());
+	$db->query('REPLACE INTO '.$db->prefix.'config (conf_name, conf_value) VALUES ("o_plugile_menu","'.intval($_POST['menu']).'"), ("o_plugile_menu_name","'.pun_htmlspecialchars($_POST['plugile_menu_name']).'")') or error('Unable to add or update "o_plugile_menu" and "o_plugile_menu_name" in config', __FILE__, __LINE__, $db->error());
 
 	// Regenerate the config cache
 	require_once PUN_ROOT.'include/cache.php';
