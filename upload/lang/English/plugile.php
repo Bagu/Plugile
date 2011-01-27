@@ -19,7 +19,7 @@ $lang_plugile = array(
 'Config update redirect'		=>	'Plugile configuration updated. Redirecting &hellip;',
 'plugin_desc'					=>	'With this plugin, you can modify general plugiles display.',
 
-// erreurs
+// errors
 
 );
 

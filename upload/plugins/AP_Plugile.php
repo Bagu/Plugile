@@ -57,7 +57,7 @@ if (isset($pun_config['o_plugile_version'])) { $reinstall=1; }
 		redirect(PLUGIN_URL, $lang_plugile['Plugile install redirect']);
 }
 
-// Désinstallation
+// DÃ©sinstallation
 if (isset($_POST['delete']))
 {
 	$db->query('DELETE FROM '.$db->prefix.'config WHERE conf_name="o_plugile_version" OR conf_name="o_plugile_menu" OR conf_name="o_plugile_menu_name"') or error('Impossible de supprimer "o_plugile_version", "o_plugile_menu" et "o_plugile_menu_name" de la table config', __FILE__, __LINE__, $db->error());
@@ -69,7 +69,7 @@ if (isset($_POST['delete']))
 	redirect(PLUGIN_URL, $lang_plugile['Plugile uninstall redirect']);
 }
 
-// Mise à jour de la configuration de Plugile
+// Mise Ã  jour de la configuration de Plugile
 if (isset($_POST['saveconfig']) AND isset($pun_config['o_plugile_version']))
 {
 	$db->query('REPLACE INTO '.$db->prefix.'config (conf_name, conf_value) VALUES ("o_plugile_menu","'.intval($_POST['menu']).'"), ("o_plugile_menu_name","'.pun_htmlspecialchars($_POST['plugile_menu_name']).'")') or error('Impossible d\'ajouter ou de remplacer "o_plugile_menu" et "o_plugile_menu_name" de la table config', __FILE__, __LINE__, $db->error());
