@@ -41,7 +41,7 @@ else
 if (isset($_POST['update']))
 {
 if (isset($pun_config['o_plugile_version'])) { $reinstall=1; }
-	$plugile_version = '2.0';
+	$plugile_version = '2.1';
 	$plugile_menu = '1';
 	$plugile_menu_name = 'Plugile';
 
