@@ -220,7 +220,7 @@ if (!$section || $section == 'essentials')
 #---------[ 10. REPLACE BY ]------------------------------------------
 #
 
-if ((!$section AND !$_GET['plugin']) || $section == 'essentials')
+if ((!$section AND !isset($_GET['plugin'])) || $section == 'essentials')
 
 
 #

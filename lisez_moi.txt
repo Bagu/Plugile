@@ -221,7 +221,7 @@ if (!$section || $section == 'essentials')
 #---------[ 10. REMPLACER PAR ]------------------------------------------
 #
 
-if ((!$section AND !$_GET['plugin']) || $section == 'essentials')
+if ((!$section AND !isset($_GET['plugin'])) || $section == 'essentials')
 
 
 #
