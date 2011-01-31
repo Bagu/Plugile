@@ -98,7 +98,6 @@ else
 						<p><?php echo $lang_plugile['Plugile install infos'] ?></p>
 						<p><input type="submit" name="update" value="<?php echo $lang_plugile['Install'] ?>" /></p>
 					</fieldset>
-					<br /><br />
 					<fieldset>
 						<legend><?php echo $lang_plugile['Uninstall'] ?></legend>
 					<p><?php echo $lang_plugile['Uninstall infos'] ?></p>
