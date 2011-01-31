@@ -227,7 +227,6 @@ if ((!$section AND !isset($_GET['plugin'])) || $section == 'essentials')
 #---------[ 11. FIND (at the end) ]------------------------------------------------
 #
 
-	}
 	else
 		message($lang_common['Bad request']);
 
