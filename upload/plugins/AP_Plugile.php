@@ -30,6 +30,7 @@ if (!defined('PUN'))
 define('PUN_PLUGIN_LOADED', 1);
 define('PLUGIN_VERSION', $pun_config['o_plugile_version']);
 define('PLUGIN_URL', 'admin_loader.php?plugin=AP_Plugile.php');
+define('PUN_ACTIVE_PAGE', 'profile');
 
 // Load the plugile language files
 if (file_exists(PUN_ROOT.'lang/'.$pun_user['language'].'/plugile.php'))
