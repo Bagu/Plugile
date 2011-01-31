@@ -120,7 +120,7 @@ else
 							<tr>
 								<th scope="row"><?php echo $lang_plugile['Menu'] ?></th>
 								<td>
-									<input type="radio" name="menu" value="1"<?php if ($pun_config['o_plugile_menu'] == '1') echo ' checked="checked"' ?> /> <strong><?php echo $lang_plugile['Yes'] ?></label>&#160;&#160;&#160;<input type="radio" name="menu" value="0"<?php if ($pun_config['o_plugile_menu'] == '0') echo ' checked="checked"' ?> /> <strong><?php echo $lang_plugile['No'] ?></strong>
+									<input type="radio" name="menu" value="1"<?php if ($pun_config['o_plugile_menu'] == '1') echo ' checked="checked"' ?> /> <strong><?php echo $lang_plugile['Yes'] ?></strong>&#160;&#160;&#160;<input type="radio" name="menu" value="0"<?php if ($pun_config['o_plugile_menu'] == '0') echo ' checked="checked"' ?> /> <strong><?php echo $lang_plugile['No'] ?></strong>
 								</td>
 							</tr>
 							<tr>
