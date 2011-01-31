@@ -28,7 +28,7 @@ if (!defined('PUN'))
 
 // Tell admin_loader.php that this is indeed a plugin and that it is loaded
 define('PUN_PLUGIN_LOADED', 1);
-define('PLUGIN_VERSION', $pun_config['o_plugile_version']);
+define('PLUGIN_VERSION', '2.1');
 define('PLUGIN_URL', 'admin_loader.php?plugin=AP_Plugile.php');
 define('PUN_ACTIVE_PAGE', 'profile');
 
@@ -41,7 +41,7 @@ else
 // Installation
 if (isset($_POST['update']))
 {
-if (isset($pun_config['o_plugile_version'])) { $reinstall=1; }
+	if (isset($pun_config['o_plugile_version'])) { $reinstall=1; }
 	$plugile_version = '2.1';
 	$plugile_menu = '1';
 	$plugile_menu_name = 'Plugile';
