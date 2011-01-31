@@ -228,7 +228,6 @@ if ((!$section AND !isset($_GET['plugin'])) || $section == 'essentials')
 #---------[ 11. TROUVER (fin du fichier) ]------------------------------------------------
 #
 
-	}
 	else
 		message($lang_common['Bad request']);
 
@@ -244,7 +243,6 @@ if ((!$section AND !isset($_GET['plugin'])) || $section == 'essentials')
 #---------[ 12. AVANT AJOUTER ]-------------------------------------
 #
 
-	}
 	elseif(!isset($section) AND isset($_GET['plugin']))
 	{
 		define('PUN_ACTIVE_PAGE', 'profile');
@@ -276,6 +274,7 @@ if ((!$section AND !isset($_GET['plugin'])) || $section == 'essentials')
 		include PUN_ROOT.'plugiles/'.$plugile;
 		if (!defined('PUN_PLUGIN_LOADED'))
 			message('Error while loading \''.$plugile.'\' plugile.');
+	}
 
 #
 #---------[ 13. ENREGSITRER/ENVOYER SUR LE SERVEUR ]----------------------------
