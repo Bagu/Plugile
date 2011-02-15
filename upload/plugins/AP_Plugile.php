@@ -106,7 +106,10 @@ else
 				</div>
 				</form>
 		</div>
-
+<?php 
+	if (isset($pun_config['o_plugile_menu']))
+	{
+?>
 		<h2 class="block2"><span><?php echo $lang_plugile['Configuration'] ?></span></h2>
 		<div class="box">
 			<form id="plugileconfig" method="post" action="<?php echo PLUGIN_URL; ?>">
@@ -135,6 +138,9 @@ else
 				</div>
 			</form>
 		</div>
+<?php
+	}
+?>
 	</div>
 <?php
 
